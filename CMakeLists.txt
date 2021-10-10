@@ -7,8 +7,7 @@ add_library(eglue_lib SHARED library.cpp library.h)
 
 target_compile_definitions(eglue_lib PUBLIC -DBOOSTFOUND=${Boost_FOUND})
 
-#if (${Boost_FOUND})
-if (False)
+if (${Boost_FOUND})
     include_directories( ${Boost_INCLUDE_DIR} )
     target_link_libraries( eglue_lib LINK_PUBLIC ${Boost_LIBRARIES} )
 endif ()
