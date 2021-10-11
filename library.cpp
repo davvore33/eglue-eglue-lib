@@ -19,7 +19,7 @@ unsigned short Loader::get_value(const std::string &key) {
     try {
         const std::string &ret = this->parsed_rs.get<std::string>(key);
 
-        std::cout << ret << std::endl;
+        value = ret;
     } catch (boost::property_tree::ptree_bad_path &e) {
         print_err(e, "bad key provided");
         return Loader::errors_type::BADKEY;

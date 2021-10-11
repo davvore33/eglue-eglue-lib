@@ -26,6 +26,9 @@ public:
     unsigned short get_value(const std::string& key);
     unsigned short set_value(const std::string& key, const std::string& value);
 
+public:
+    std::string value;
+
 private:
     boost::property_tree::ptree parsed_rs;
     void print_err(const std::exception& e, const char *message);
