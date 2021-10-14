@@ -52,7 +52,6 @@ public:
 
 private:
     boost::property_tree::ptree parsed_rs;
-    void print_err(const std::exception& e, const char *message);
 };
 
 #endif //EGLUE_LIB_LIBRARY_H
